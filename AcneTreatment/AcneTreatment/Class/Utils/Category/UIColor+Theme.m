@@ -81,4 +81,8 @@
     return [UIColor colorWithHex:0xf4f4f4];
 }
 
++(UIColor *)ColorGrayLight{
+    return ColorFromRGBA(40.0, 40.0, 40.0, 1.0);
+}
+
 @end

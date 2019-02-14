@@ -18,9 +18,18 @@
 
 @implementation ATMineViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"我的";
     [self configViews];
     [self loadDataSoucre];
 }
@@ -73,10 +82,10 @@
                                               @{@"icon":PlaceholdImageNAME,@"title":@"相册",@"ClassName":@"ATConsumeViewController"},
                                               @{@"icon":PlaceholdImageNAME,@"title":@"评价",@"ClassName":@"ATConsumeViewController"}]}]},
                  
-                 @{@"sections":@[@{@"title":@"皮肤检查报告",@"type":@(ATSettingItemTypeArrow),@"ClassName":@"ATReportViewController",@"CellClass":@"ATMineTableViewCell"},
+                 @{@"sections":@[@{@"title":@"用户反馈",@"type":@(ATSettingItemTypeArrow),@"ClassName":@"ATReportViewController",@"CellClass":@"ATMineTableViewCell"},
                                  @{@"title":@"投诉建议",@"type":@(ATSettingItemTypeArrow),@"ClassName":@"ATFeedBackViewController",@"CellClass":@"ATMineTableViewCell"},
                                  @{@"title":@"关于我们",@"type":@(ATSettingItemTypeArrow),@"ClassName":@"ATAboutViewController",@"CellClass":@"ATMineTableViewCell"},
-                                 @{@"title":@"密码设置",@"type":@(ATSettingItemTypeArrow),@"ClassName":@"ATSettingViewController",@"CellClass":@"ATMineTableViewCell"}]}];
+                                 @{@"title":@"系统设置",@"type":@(ATSettingItemTypeArrow),@"ClassName":@"ATSettingViewController",@"CellClass":@"ATMineTableViewCell"}]}];
     self.lists = [ATSettingItemModel mj_objectArrayWithKeyValuesArray:settings];
     [self.tableView reloadData];
 }

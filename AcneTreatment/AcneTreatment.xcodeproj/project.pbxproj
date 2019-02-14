@@ -44,11 +44,14 @@
 		C2AF1765212962DD00E76E06 /* ATTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AF1764212962DD00E76E06 /* ATTabBarControllerConfig.m */; };
 		C2AF176C212964BF00E76E06 /* ATHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AF176B212964BF00E76E06 /* ATHomeViewController.m */; };
 		C2AF176F212964C600E76E06 /* ATMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AF176E212964C600E76E06 /* ATMineViewController.m */; };
-		C2AF177C21296EF300E76E06 /* ATNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AF177721296EF300E76E06 /* ATNetworkHelper.m */; };
 		C2AF177D21296EF300E76E06 /* ATNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AF177821296EF300E76E06 /* ATNetworkCache.m */; };
 		C2AF177E21296EF300E76E06 /* WDSessionManger.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AF177B21296EF300E76E06 /* WDSessionManger.m */; };
 		D033EBB32213B5150080C35C /* ATSlideTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D033EBB22213B5150080C35C /* ATSlideTabBar.m */; };
 		D033EBB6221408F50080C35C /* ATMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = D033EBB5221408F50080C35C /* ATMenuView.m */; };
+		D033EBB92214F7260080C35C /* ATBusinessNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D033EBB82214F7260080C35C /* ATBusinessNetworkTool.m */; };
+		D033EBBC2214FCF40080C35C /* WDNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D033EBBA2214FCF40080C35C /* WDNetworkHelper.m */; };
+		D033EBBE221505D30080C35C /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = D033EBBD221505D30080C35C /* home.json */; };
+		D033EBC12215093B0080C35C /* ATHomeContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D033EBC02215093B0080C35C /* ATHomeContentModel.m */; };
 		D082CAC9212A8E11006B8C4C /* ATBaseTableHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D082CAC8212A8E11006B8C4C /* ATBaseTableHeaderFooterView.m */; };
 		D082CAD2212A9D5D006B8C4C /* ATSettingItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D082CAD1212A9D5D006B8C4C /* ATSettingItemModel.m */; };
 		D082CAD5212AA51D006B8C4C /* ATMineItemsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D082CAD4212AA51D006B8C4C /* ATMineItemsTableViewCell.m */; };
@@ -148,8 +151,6 @@
 		C2AF176B212964BF00E76E06 /* ATHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATHomeViewController.m; sourceTree = "<group>"; };
 		C2AF176D212964C600E76E06 /* ATMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATMineViewController.h; sourceTree = "<group>"; };
 		C2AF176E212964C600E76E06 /* ATMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATMineViewController.m; sourceTree = "<group>"; };
-		C2AF177621296EF300E76E06 /* ATNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATNetworkHelper.h; sourceTree = "<group>"; };
-		C2AF177721296EF300E76E06 /* ATNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATNetworkHelper.m; sourceTree = "<group>"; };
 		C2AF177821296EF300E76E06 /* ATNetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATNetworkCache.m; sourceTree = "<group>"; };
 		C2AF177921296EF300E76E06 /* ATNetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATNetworkCache.h; sourceTree = "<group>"; };
 		C2AF177A21296EF300E76E06 /* WDSessionManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSessionManger.h; sourceTree = "<group>"; };
@@ -161,6 +162,13 @@
 		D033EBB22213B5150080C35C /* ATSlideTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSlideTabBar.m; sourceTree = "<group>"; };
 		D033EBB4221408F50080C35C /* ATMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATMenuView.h; sourceTree = "<group>"; };
 		D033EBB5221408F50080C35C /* ATMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATMenuView.m; sourceTree = "<group>"; };
+		D033EBB72214F7260080C35C /* ATBusinessNetworkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBusinessNetworkTool.h; sourceTree = "<group>"; };
+		D033EBB82214F7260080C35C /* ATBusinessNetworkTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBusinessNetworkTool.m; sourceTree = "<group>"; };
+		D033EBBA2214FCF40080C35C /* WDNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDNetworkHelper.m; sourceTree = "<group>"; };
+		D033EBBB2214FCF40080C35C /* WDNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDNetworkHelper.h; sourceTree = "<group>"; };
+		D033EBBD221505D30080C35C /* home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
+		D033EBBF2215093B0080C35C /* ATHomeContentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATHomeContentModel.h; sourceTree = "<group>"; };
+		D033EBC02215093B0080C35C /* ATHomeContentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATHomeContentModel.m; sourceTree = "<group>"; };
 		D082CAC6212A72F7006B8C4C /* ATBaseCollectionViewCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBaseCollectionViewCellProtocol.h; sourceTree = "<group>"; };
 		D082CAC7212A8E11006B8C4C /* ATBaseTableHeaderFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBaseTableHeaderFooterView.h; sourceTree = "<group>"; };
 		D082CAC8212A8E11006B8C4C /* ATBaseTableHeaderFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBaseTableHeaderFooterView.m; sourceTree = "<group>"; };
@@ -346,6 +354,7 @@
 			children = (
 				C28F1B832128632700B0DBD8 /* Assets.xcassets */,
 				C28F1BA9212864E600B0DBD8 /* AcneTreatmentPrefixHeader.pch */,
+				D033EBBD221505D30080C35C /* home.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -484,12 +493,14 @@
 		C28F1BCC21286D3E00B0DBD8 /* NetworkTools */ = {
 			isa = PBXGroup;
 			children = (
+				D033EBBB2214FCF40080C35C /* WDNetworkHelper.h */,
+				D033EBBA2214FCF40080C35C /* WDNetworkHelper.m */,
 				C2AF177921296EF300E76E06 /* ATNetworkCache.h */,
 				C2AF177821296EF300E76E06 /* ATNetworkCache.m */,
-				C2AF177621296EF300E76E06 /* ATNetworkHelper.h */,
-				C2AF177721296EF300E76E06 /* ATNetworkHelper.m */,
 				C2AF177A21296EF300E76E06 /* WDSessionManger.h */,
 				C2AF177B21296EF300E76E06 /* WDSessionManger.m */,
+				D033EBB72214F7260080C35C /* ATBusinessNetworkTool.h */,
+				D033EBB82214F7260080C35C /* ATBusinessNetworkTool.m */,
 			);
 			path = NetworkTools;
 			sourceTree = "<group>";
@@ -579,6 +590,8 @@
 		D0F5479521D4AFE5005B7536 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D033EBBF2215093B0080C35C /* ATHomeContentModel.h */,
+				D033EBC02215093B0080C35C /* ATHomeContentModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -666,6 +679,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D033EBBE221505D30080C35C /* home.json in Resources */,
 				C28F1B842128632700B0DBD8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -730,7 +744,6 @@
 				C28F1BEF2128710600B0DBD8 /* UIViewController+WDNavigatonBarAppearance.m in Sources */,
 				C28F1C022128733D00B0DBD8 /* ATToolManger+Authorization.m in Sources */,
 				C28F1BF02128710600B0DBD8 /* UIFont+Category.m in Sources */,
-				C2AF177C21296EF300E76E06 /* ATNetworkHelper.m in Sources */,
 				C2AF1765212962DD00E76E06 /* ATTabBarControllerConfig.m in Sources */,
 				C28F1BD62128704600B0DBD8 /* ATBaseNavigationViewController.m in Sources */,
 				C28F1BFF2128731200B0DBD8 /* ATToolManger+TextHeight.m in Sources */,
@@ -753,6 +766,7 @@
 				C28F1BB22128690100B0DBD8 /* ATBaseModel.m in Sources */,
 				C28F1BF92128727400B0DBD8 /* ATToolManger+Appstore.m in Sources */,
 				C28F1BF32128710600B0DBD8 /* UIView+WDBlocksKit.m in Sources */,
+				D033EBBC2214FCF40080C35C /* WDNetworkHelper.m in Sources */,
 				C2AF176C212964BF00E76E06 /* ATHomeViewController.m in Sources */,
 				C28F1BD8212870AE00B0DBD8 /* Foundation+Log.m in Sources */,
 				C28F1BA72128649200B0DBD8 /* AppDelegate+ATCategory.m in Sources */,
@@ -764,8 +778,10 @@
 				D033EBB6221408F50080C35C /* ATMenuView.m in Sources */,
 				D082CAD5212AA51D006B8C4C /* ATMineItemsTableViewCell.m in Sources */,
 				C28F1BED2128710600B0DBD8 /* NSString+Category.m in Sources */,
+				D033EBC12215093B0080C35C /* ATHomeContentModel.m in Sources */,
 				C251EAE5212981C50095BF4B /* ATAlertShowView.m in Sources */,
 				C21320712129AAAC007D73F8 /* ATMineHeadView.m in Sources */,
+				D033EBB92214F7260080C35C /* ATBusinessNetworkTool.m in Sources */,
 				D033EBB32213B5150080C35C /* ATSlideTabBar.m in Sources */,
 				D0F271B9212B9C8A00871ED7 /* ATHomeTakeMeasureCell.m in Sources */,
 				C28F1BF6212871D400B0DBD8 /* ATToolManger.m in Sources */,

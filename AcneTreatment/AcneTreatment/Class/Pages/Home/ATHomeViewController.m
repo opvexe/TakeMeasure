@@ -8,6 +8,7 @@
 
 #import "ATHomeViewController.h"
 #import "ATHomeTakeMeasureCell.h"
+#import "ATHomeContentModel.h"
 #import "ATAlertShowView.h"
 #import "ATSlideTabBar.h"
 #import "ATMenuView.h"
@@ -29,6 +30,7 @@ UITableViewDataSource
     [super viewDidLoad];
     [self tableViewDidTriggerHeaderRefresh:DisplayTypeDefalut];
     [self configView];
+
 }
 
 -(void)configView{
@@ -74,7 +76,9 @@ UITableViewDataSource
 }
 
 - (void)tableViewDidTriggerHeaderRefresh:(DisplayType)type{
-    
+    NSDictionary *home =  [NSString readJson2DicWithFileName:@"home"];
+    self.lists = [ATHomeContentModel mj_objectArrayWithKeyValuesArray:home[@"data"]];
+    [self.tableListView reloadData];
 }
 
 - (void)tableViewDidTriggerFooterRefresh:(DisplayType)type{
@@ -107,10 +111,10 @@ UITableViewDataSource
 
 #pragma mark <UITableViewDelegate,UITableViewDataSource>
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    return self.lists.count;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 130.0f;
+    return [ATHomeTakeMeasureCell getCellHeight:self.lists[indexPath.row]];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -119,12 +123,13 @@ UITableViewDataSource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     ATHomeTakeMeasureCell *cell = [ATHomeTakeMeasureCell CellWithTableView:tableView];
+    [cell InitDataWithModel:self.lists[indexPath.row]];
     cell.delegate = self;
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+  
 }
 
 #pragma mark 适配ios11

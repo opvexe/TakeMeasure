@@ -40,4 +40,12 @@ static YYCache *_dataCache;
     return [NSString stringWithFormat:@"%@%@",URL,paraString];
 }
 
++(void)saveHttpCache:(id)httpCache forKey:(NSString *)key{
+    [_dataCache setObject:httpCache forKey:key withBlock:nil];
+}
+
++(id)getHttpCacheForKey:(NSString *)key{
+    return  [_dataCache objectForKey:key];
+}
+
 @end

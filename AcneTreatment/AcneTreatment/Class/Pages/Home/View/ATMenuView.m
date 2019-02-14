@@ -68,18 +68,18 @@ static CGFloat rightMargin = 10.0f; ///右侧间隙
         self.container.frame = CGRectMake(originX, originY,self.frame.size.width - 40.0f - 10.0f, MenuHeight);
     }
     
-    UIBezierPath *path = [UIBezierPath bezierPath];
+//    UIBezierPath *path = [UIBezierPath bezierPath];
 
    
-    [path moveToPoint:CGPointMake(40.0f, originY)];
-    [path addLineToPoint: CGPointMake(0, bottomLeftArcCenter.y)];
-    [path addArcWithCenter: bottomLeftArcCenter radius: 5.0f startAngle: -M_PI endAngle: -M_PI-M_PI_2 clockwise: NO];
+//    [path moveToPoint:CGPointMake(40.0f, originY)];
+//    [path addLineToPoint: CGPointMake(0, bottomLeftArcCenter.y)];
+//    [path addArcWithCenter: bottomLeftArcCenter radius: 5.0f startAngle: -M_PI endAngle: -M_PI-M_PI_2 clockwise: NO];
     
     
-    CAShapeLayer *maskLayer = [CAShapeLayer layer];
-    
-    
-    self.container.layer.mask = maskLayer;
+//    CAShapeLayer *maskLayer = [CAShapeLayer layer];
+//
+//
+//    self.container.layer.mask = maskLayer;
 }
 
 -(void)setCornerRaius:(CGFloat)cornerRaius{

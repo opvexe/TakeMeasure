@@ -18,4 +18,6 @@
 /// 删除所有网络缓存
 + (void)removeAllHttpCache;
 
++(void)saveHttpCache:(id)httpCache  forKey:(NSString *)key;
++(id)getHttpCacheForKey:(NSString *)key ;
 @end

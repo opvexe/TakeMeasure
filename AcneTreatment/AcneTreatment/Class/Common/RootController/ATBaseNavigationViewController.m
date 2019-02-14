@@ -18,7 +18,7 @@
     UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
     UIImage *backgroundImage = nil;
     NSDictionary *textAttributes = nil;
-    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor TextGrayColor],NSForegroundColorAttributeName,[UIFont SYPingFangSCLightFontOfSize:Number(14.0f)],NSFontAttributeName, nil]];
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont systemFontOfSize:16],NSFontAttributeName, nil]];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [navigationBarAppearance setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     [navigationBarAppearance setShadowImage:[UIImage new]];
@@ -28,7 +28,7 @@
         [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -2) forBarMetrics:UIBarMetricsDefault];
     }
     if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
-         backgroundImage = [UIImage imageWithColor:[UIColor BgColor]];
+        backgroundImage = [UIImage imageWithColor:[UIColor BgColor]];
         
         textAttributes = @{
                            NSFontAttributeName :[UIFont SYPingFangSCLightFontOfSize:Number(14.0f)],
@@ -80,13 +80,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

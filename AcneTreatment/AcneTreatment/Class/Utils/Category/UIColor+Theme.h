@@ -44,4 +44,5 @@
  */
 +(UIColor *)BgTableViewColor;
 
++(UIColor *)ColorGrayLight;
 @end

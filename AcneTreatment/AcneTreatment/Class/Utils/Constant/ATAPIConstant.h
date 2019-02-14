@@ -10,4 +10,10 @@
 
 @interface ATAPIConstant : NSObject
 
+//接口域名
+FOUNDATION_EXTERN NSString *const HOST_API ;
+
+
+//首页接口
+FOUNDATION_EXTERN NSString *const kHomeDefalut;
 @end

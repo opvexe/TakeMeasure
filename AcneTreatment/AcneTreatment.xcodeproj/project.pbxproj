@@ -52,6 +52,7 @@
 		D033EBBC2214FCF40080C35C /* WDNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D033EBBA2214FCF40080C35C /* WDNetworkHelper.m */; };
 		D033EBBE221505D30080C35C /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = D033EBBD221505D30080C35C /* home.json */; };
 		D033EBC12215093B0080C35C /* ATHomeContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D033EBC02215093B0080C35C /* ATHomeContentModel.m */; };
+		D033EBC5221550180080C35C /* ATCustomRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D033EBC4221550180080C35C /* ATCustomRefreshHeader.m */; };
 		D082CAC9212A8E11006B8C4C /* ATBaseTableHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D082CAC8212A8E11006B8C4C /* ATBaseTableHeaderFooterView.m */; };
 		D082CAD2212A9D5D006B8C4C /* ATSettingItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D082CAD1212A9D5D006B8C4C /* ATSettingItemModel.m */; };
 		D082CAD5212AA51D006B8C4C /* ATMineItemsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D082CAD4212AA51D006B8C4C /* ATMineItemsTableViewCell.m */; };
@@ -169,6 +170,8 @@
 		D033EBBD221505D30080C35C /* home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
 		D033EBBF2215093B0080C35C /* ATHomeContentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATHomeContentModel.h; sourceTree = "<group>"; };
 		D033EBC02215093B0080C35C /* ATHomeContentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATHomeContentModel.m; sourceTree = "<group>"; };
+		D033EBC3221550180080C35C /* ATCustomRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCustomRefreshHeader.h; sourceTree = "<group>"; };
+		D033EBC4221550180080C35C /* ATCustomRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATCustomRefreshHeader.m; sourceTree = "<group>"; };
 		D082CAC6212A72F7006B8C4C /* ATBaseCollectionViewCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBaseCollectionViewCellProtocol.h; sourceTree = "<group>"; };
 		D082CAC7212A8E11006B8C4C /* ATBaseTableHeaderFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBaseTableHeaderFooterView.h; sourceTree = "<group>"; };
 		D082CAC8212A8E11006B8C4C /* ATBaseTableHeaderFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBaseTableHeaderFooterView.m; sourceTree = "<group>"; };
@@ -508,6 +511,7 @@
 		C28F1BCD21286D4F00B0DBD8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D033EBC222154FDB0080C35C /* CustomRefresh */,
 				D033EBB02213B4FA0080C35C /* TTSlideTabBar */,
 				D082CAFB212ABDFB006B8C4C /* WYTextView */,
 				C251EAE62129842A0095BF4B /* TimerButton */,
@@ -554,6 +558,15 @@
 				D033EBB22213B5150080C35C /* ATSlideTabBar.m */,
 			);
 			path = TTSlideTabBar;
+			sourceTree = "<group>";
+		};
+		D033EBC222154FDB0080C35C /* CustomRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				D033EBC3221550180080C35C /* ATCustomRefreshHeader.h */,
+				D033EBC4221550180080C35C /* ATCustomRefreshHeader.m */,
+			);
+			path = CustomRefresh;
 			sourceTree = "<group>";
 		};
 		D082CACF212A9B71006B8C4C /* Model */ = {
@@ -765,6 +778,7 @@
 				D082CAFE212ABDFB006B8C4C /* WYTextView.m in Sources */,
 				C28F1BB22128690100B0DBD8 /* ATBaseModel.m in Sources */,
 				C28F1BF92128727400B0DBD8 /* ATToolManger+Appstore.m in Sources */,
+				D033EBC5221550180080C35C /* ATCustomRefreshHeader.m in Sources */,
 				C28F1BF32128710600B0DBD8 /* UIView+WDBlocksKit.m in Sources */,
 				D033EBBC2214FCF40080C35C /* WDNetworkHelper.m in Sources */,
 				C2AF176C212964BF00E76E06 /* ATHomeViewController.m in Sources */,

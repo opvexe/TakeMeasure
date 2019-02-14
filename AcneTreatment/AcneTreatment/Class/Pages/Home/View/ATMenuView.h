@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ATMenuView : UIView
-///MARK: 圆角 默认5.0f
+///MARK: 圆角 默认10.0f
 @property (nonatomic,assign) CGFloat cornerRaius;
 
 - (instancetype)initWithFrame:(CGRect)frame relyonView:(id)view;

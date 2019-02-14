@@ -238,13 +238,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		C251EAE2212981230095BF4B /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		C251EAE62129842A0095BF4B /* TimerButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -522,7 +515,6 @@
 		C28F1BD021286EE500B0DBD8 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				C251EAE2212981230095BF4B /* View */,
 				C28F1BD121286F1600B0DBD8 /* ATLoginViewController.h */,
 				C28F1BD221286F1600B0DBD8 /* ATLoginViewController.m */,
 			);
@@ -543,7 +535,6 @@
 		C2AF1769212964B100E76E06 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				D0F5479521D4AFE5005B7536 /* Model */,
 				D0F271B6212B98F400871ED7 /* View */,
 				C2AF176A212964BF00E76E06 /* ATHomeViewController.h */,
 				C2AF176B212964BF00E76E06 /* ATHomeViewController.m */,
@@ -600,6 +591,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+<<<<<<< Updated upstream
 		D0F5479521D4AFE5005B7536 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -609,6 +601,8 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> Stashed changes
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
